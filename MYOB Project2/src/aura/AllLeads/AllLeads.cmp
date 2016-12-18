@@ -1,0 +1,113 @@
+<aura:component controller="AccountController" implements="forceCommunity:availableForAllPageTypes">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="leads" type="List" />
+    <aura:attribute name="PartnerDetails" type="Account"/>
+    <aura:attribute name="Currentpage" type="integer" default="0"/>
+    <aura:attribute name="Totalpages" type="integer" default="10"/>
+    <aura:attribute name="TotalRecords" type="integer" default="200"/>
+    <aura:attribute name="pageSize" type="String" default="5" />
+    <aura:attribute name="next" type="boolean" />
+    <aura:attribute name="prev" type="boolean" />
+    <aura:attribute name="SortFieldOrder" type="String" default=""/>
+    <div id="pgDiv" class="bkgImage" style="height:30%">
+        <div id="tabDiv">
+            <div style="float:left;text-align:left;width:25%;padding-left: 5%;">
+                <div><h3  style="color:white;">Total Points </h3></div>
+                <div><h1 style="color:white;">{!v.PartnerDetails.LP_Points__c} Points</h1></div>
+            </div>
+            <div style="float:left; text-align: left;width:27%;padding-left:5%;">
+                <div>
+                    <aura:renderif isTrue="{!v.PartnerDetails.LP_Status__c != 'Diamond'}"><h3  style="color:white;">Points needed for {!v.PartnerDetails.LP_Next_Status__c} status</h3></aura:renderif>
+                </div>
+                <div>
+                    <aura:renderif isTrue="{!v.PartnerDetails.LP_Status__c != 'Diamond'}"><h1 style="color:white;">{!v.PartnerDetails.LP_Points_to_upgrade__c} Points</h1>
+                    </aura:renderif>
+                </div>
+            </div>
+        </div>
+        <div id="imgDiv">
+            <div style="float:left; text-align: center;margin-left: 19%;">
+                <div><h3 style="color:white;">Current Status</h3></div>
+                <div><h1 style="color:white;">{!v.PartnerDetails.LP_Status__c} Partner</h1></div>
+            </div>
+            <div>
+                <aura:renderIf isTrue="{!v.PartnerDetails.LP_Status__c == 'Silver'}">
+                    <img src="{!$Resource.MYOB_Silver}" style="width: 10%;text-align:right;padding-left: 1%;margin:1%;"/>
+                </aura:renderIf>
+                <aura:renderIf isTrue="{!v.PartnerDetails.LP_Status__c == 'Gold'}">
+                    <img src="{!$Resource.MYOB_Gold}" style="width: 10%;text-align:right;padding-left: 1%;margin:1%;"/>
+                </aura:renderIf>
+                <aura:renderIf isTrue="{!v.PartnerDetails.LP_Status__c == 'Purple'}">
+                    <img src="{!$Resource.MYOB_Purple}" style="width: 10%;text-align:right;padding-left: 1%;margin:1%;"/>
+                </aura:renderIf>
+                <aura:renderIf isTrue="{!v.PartnerDetails.LP_Status__c == 'Diamond'}">
+                    <img src="{!$Resource.MYOB_Diamond}" style="width: 10%;text-align:right;padding-left: 1%;margin:1%;"/>
+                </aura:renderIf>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="background-color: white;width:100%">
+        <h2 class="listTitle" data-aura-rendered-by="16:254;a" style="margin:1%; padding-top:1%;"><b>Leads</b></h2><br/>
+        <table class="table" style="width:98%; margin:1%;border-collapse:collapse;line-height:25px">       
+            <thead>
+                <tr > 
+                    <th scope="row"><span class="toggle" title="ID"><b>First Name</b></span>
+                        <ui:button class="btnOrder" aura:id="FirstName Asc" press="{!c.LeadSort}"><div class="arrow-up"></div></ui:button>
+                        <ui:button class="btnOrder" aura:id="FirstName Desc" press="{!c.LeadSort}"><div class="arrow-down"></div></ui:button>
+                    </th>
+                    <th scope="row"><span class="toggle" title="Name"><b>Last Name</b></span>
+                        <ui:button class="btnOrder" aura:id="LastName Asc" press="{!c.LeadSort}"><div class="arrow-up"></div></ui:button>
+                        <ui:button class="btnOrder" aura:id="LastName Desc" press="{!c.LeadSort}"><div class="arrow-down"></div></ui:button>
+                    </th>
+                    <th scope="row"><span class="toggle" title="Name"><b>Lead Source</b></span>
+                        <ui:button class="btnOrder" aura:id="LeadSource Asc" press="{!c.LeadSort}"><div class="arrow-up"></div></ui:button>
+                        <ui:button class="btnOrder" aura:id="LeadSource Desc" press="{!c.LeadSort}"><div class="arrow-down"></div></ui:button>
+                    </th>
+                    <th scope="row"><span class="slds-truncate" title="Name"><b>Status</b></span>
+                        <ui:button class="btnOrder" aura:id="Status Asc" press="{!c.LeadSort}"><div class="arrow-up"></div></ui:button>
+                        <ui:button class="btnOrder" aura:id="Status Desc" press="{!c.LeadSort}"><div class="arrow-down"></div></ui:button>
+                    </th>
+                    <th scope="row"><span class="slds-truncate" title="Name"><b>Phone</b></span>
+                        <ui:button class="btnOrder" aura:id="Phone Asc" press="{!c.LeadSort}"><div class="arrow-up"></div></ui:button>
+                        <ui:button class="btnOrder" aura:id="Phone Desc" press="{!c.LeadSort}"><div class="arrow-down"></div></ui:button>
+                    </th>
+                    <th scope="row"><span class="slds-truncate" title="Name"><b>Email</b></span>
+                        <ui:button class="btnOrder" aura:id="Email Asc" press="{!c.LeadSort}"><div class="arrow-up"></div></ui:button>
+                        <ui:button class="btnOrder" aura:id="Email Desc" press="{!c.LeadSort}"><div class="arrow-down"></div></ui:button>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>               
+                <aura:iteration items="{!v.leads}" var="cus">
+                    <tr>
+                        <td width="15%">
+                            <span>{!cus.FirstName}</span>
+                        </td>
+                        <td width="15%">
+                            <span>{!cus.LastName}</span>
+                        </td>
+                        <td width="20%">
+                            <span>{!cus.LeadSource}</span> 
+                        </td>
+                        <td width="20%">
+                            <span>{!cus.Status}</span> 
+                        </td>
+                        <td width="15%">
+                            <span>{!cus.Phone}</span>
+                        </td>
+                        <td width="25%">
+                            <span>{!cus.Email}</span>
+                        </td> 
+                    </tr>
+                </aura:iteration>
+            </tbody>    
+        </table>
+    </div>
+    <div id="divPaging" style="float:right;width: 75%;margin:1%">
+        <ui:button class="button1" press="{!c.FirstPage}" disabled="{!v.prev}">First Page</ui:button>
+        <ui:button class="button1" press="{!c.Previous}" disabled="{!v.prev}">Prev</ui:button>
+        <span style="margin-right: 10%; margin-left: 10%; vertical-align: middle;">Total {!v.TotalRecords} records • page {!v.Currentpage} / {!v.Totalpages}</span>
+        <ui:button class="button1" press="{!c.Next}" disabled="{!v.next}">Next</ui:button>
+        <ui:button class="button1" press="{!c.LastPage}" disabled="{!v.next}">Last Page</ui:button>
+    </div>
+</aura:component>

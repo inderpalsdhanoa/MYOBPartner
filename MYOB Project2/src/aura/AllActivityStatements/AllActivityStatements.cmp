@@ -1,0 +1,124 @@
+<aura:component controller="AccountController" implements="forceCommunity:availableForAllPageTypes">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="accounts" type="List" />
+    <aura:attribute name="PartnerDetails" type="Account"/>
+    <aura:attribute name="StartDate" type="Date" default=""/>
+    <aura:attribute name="EndDate" type="Date" default=""/>
+    <aura:attribute name="AllCategory" type="Set" />
+    <aura:attribute name="Currentpage" type="integer" default="0"/>
+    <aura:attribute name="Totalpages" type="integer" default="10"/>
+    <aura:attribute name="TotalRecords" type="integer" default="200"/>
+    <aura:attribute name="pageSize" type="String" default="15" />
+    <aura:attribute name="next" type="boolean"/>
+    <aura:attribute name="prev" type="boolean"/>
+    <div id="pgDiv" class="bkgImage" style="height:30%">
+            <div id="tabDiv">
+                <div style="float:left;text-align:left;width:25%;padding-left: 5%;">
+                    <div><h3  style="color:white;">Total Points </h3></div>
+                    <div><h1 style="color:white;">{!v.PartnerDetails.LP_Points__c} Points</h1></div>
+                </div>
+                <div style="float:left; text-align: left;width:27%;padding-left:5%;">
+                    <div>
+                        <aura:renderif isTrue="{!v.PartnerDetails.LP_Status__c != 'Purple'}"><h3  style="color:white;">Points needed for {!v.PartnerDetails.LP_Next_Status__c} status</h3></aura:renderif>
+                    </div>
+                    <div>
+                        <aura:renderif isTrue="{!v.PartnerDetails.LP_Status__c != 'Purple'}"><h1 style="color:white;">{!v.PartnerDetails.LP_Points_to_upgrade__c} Points</h1>
+                        </aura:renderif>
+                    </div>
+                </div>
+            </div>
+            <div id="imgDiv">
+                <div style="float:left; text-align: center;margin-left: 19%;">
+                    <div><h3 style="color:white;">Current Status</h3></div>
+                    <div><h1 style="color:white;">{!v.PartnerDetails.LP_Status__c} Partner</h1></div>
+                </div>
+                <div>
+                    <aura:renderIf isTrue="{!v.PartnerDetails.LP_Status__c == 'Silver'}">
+                        <img src="{!$Resource.MYOB_Silver}" style="width: 10%;text-align:right;padding-left: 1%;margin:1%;"/>
+                    </aura:renderIf>
+                    <aura:renderIf isTrue="{!v.PartnerDetails.LP_Status__c == 'Gold'}">
+                        <img src="{!$Resource.MYOB_Gold}" style="width: 10%;text-align:right;padding-left: 1%;margin:1%;"/>
+                    </aura:renderIf>
+                    <aura:renderIf isTrue="{!v.PartnerDetails.LP_Status__c == 'Purple'}">
+                        <img src="{!$Resource.MYOB_Purple}" style="width: 10%;text-align:right;padding-left: 1%;margin:1%;"/>
+                    </aura:renderIf>
+                    <aura:renderIf isTrue="{!v.PartnerDetails.LP_Status__c == 'Diamond'}">
+                        <img src="{!$Resource.MYOB_Diamond}" style="width: 10%;text-align:right;padding-left: 1%;margin:1%;"/>
+                    </aura:renderIf>
+                </div>
+            </div>
+        </div>
+        
+        <div id="divFilter" style="background-color: white;">
+            <table style="width:98%;margin:1%;border-collapse:collapse;border-radius:2%;box-shadow:0% 2% 1% #E2E4E7;"> 
+                <thead ><tr >
+                    <th style="width:25%;"><b>Activity Category</b></th>
+                    <th style="width:25%;"><b>From</b></th>
+                    <th style="width:25%;"><b>To</b></th>
+                    <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="width:15%;text-align:left;">
+                            <ui:inputSelect aura:id="levels" change="{!c.onChangeCatergoryTypePagination}">
+                                <aura:iteration items="{!v.AllCategory}" var="level">
+                                    <ui:inputSelectOption text="{!level}" label="{!level}"/>
+                                </aura:iteration>
+                            </ui:inputSelect> 
+                        </td>
+                        <td style="width:15%;text-align:left;">
+                            <ui:inputDate aura:id="StartDate" class="field" value="{!v.StartDate}" displayDatePicker="true" />
+                        </td>
+                        <td style="width:15%;text-align:left;">
+                            <ui:inputDate aura:id="EndDate" class="field" value="{!v.EndDate}" displayDatePicker="true" />
+                        </td>
+                        <td>
+                            <ui:button class="button1" aura:id="Date Filter" label="Filter" press="{!c.DateFilterPagination}"/>
+                        </td>
+                        <td>
+                            <ui:button class="button1" aura:id="Reset" label="Reset Filter" press="{!c.ResetFilter}"/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    <div class="container" style="background-color: white;width:100%">
+        <h2 class="listTitle" data-aura-rendered-by="16:254;a" style="margin:1%;"><b>Activity Points</b></h2><br/>
+        <table class="table" style="width:100%;border-collapse:collapse;line-height:25px;">       
+            <thead>
+                <tr>
+                    <th scope="row"><span title="ID"><b>Date</b></span></th>
+                    <th scope="row"><span class="toggle" title="Name"><b>Category</b></span></th>
+                    <th scope="row"><span class="slds-truncate" title="Name"><b>Activity</b></span></th>
+                    <th scope="row"><span class="slds-truncate" title="Name"><b>Points</b></span></th>
+                </tr>
+            </thead>
+            <tbody>               
+                <aura:iteration items="{!v.accounts}" var="cus">
+                    <tr>
+                        <td width="15%">
+                            <span class="uiOutputDate" div="" data-aura-class="uiOutputDate"><ui:outputdate format='dd-MM-yyyy' value="{!cus.LP_Activity_Date__c}"/></span>
+                        </td>
+                        <td width="25%">
+                            <span class="uiOutputText" dir="ltr" data-aura-class="uiOutputText">{!cus.LP_Points_Category__c}</span> 
+                        </td>
+                        <td width="30%">
+                            <span class="uiOutputText" dir="ltr" data-aura-class="uiOutputText">{!cus.LP_Activity__c}</span>
+                        </td>
+                        <td width="15%">
+                            <span class="uiOutputNumber" data-aura-class="uiOutputNumber">{!cus.LP_Points__c}</span>
+                        </td>                     
+                    </tr>
+                </aura:iteration>
+            </tbody>    
+        </table>        
+    </div>
+    <div id="divPaging" style="float:right;width: 75%;margin:1%">
+        <ui:button class="button1" press="{!c.FirstPage}" disabled="{!v.prev}">First Page</ui:button>
+        <ui:button class="button1" press="{!c.Previous}" disabled="{!v.prev}">Prev</ui:button>
+        <span style="margin-right: 10%; margin-left: 10%; vertical-align: middle;">Total {!v.TotalRecords} records • page {!v.Currentpage} / {!v.Totalpages}</span>
+        <ui:button class="button1" press="{!c.NextPagination}" disabled="{!v.next}">Next</ui:button>
+        <ui:button class="button1" press="{!c.LastPage}" disabled="{!v.next}">Last Page</ui:button>
+    </div>
+</aura:component>

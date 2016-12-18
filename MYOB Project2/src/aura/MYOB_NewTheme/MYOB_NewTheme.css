@@ -1,0 +1,26 @@
+.THIS.tabs-advanced {
+    display: table;
+    border: none;
+}
+.THIS.tabs-advanced > li{
+    display: table-cell;
+    float: none;
+}
+.THIS.tabs-advanced > li > a{
+    margin-right: 0;
+    border-bottom-style: none;
+}
+.THIS.tabs-advanced > li:not(.active):not(:hover) {
+    border-bottom: 1px solid #ddd;
+}
+.THIS.tabs-advanced > li.filler{
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+.THIS.tabs-advanced > li.in-between-filler{
+    min-width: 2px;
+    border-bottom: 2px solid #800080;
+}
+.THIS.selectedTab {
+    border-bottom: 2px solid #800080;
+}

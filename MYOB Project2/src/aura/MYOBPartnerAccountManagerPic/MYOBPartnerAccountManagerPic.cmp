@@ -1,0 +1,23 @@
+<aura:component controller="AccountController" implements="forceCommunity:availableForAllPageTypes">
+    <aura:attribute name="recordId" type="Id"/>
+    <aura:attribute name="UserInfo" type="User"/>
+    <aura:attribute name="pictureSrc" type="String" 
+                    default="https://s3-us-west-1.amazonaws.com/sfdc-demo/image-placeholder.png"/>
+    <aura:attribute name="PtrMngrEMail" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <div class="Bkgcolor" Style="text-align: center;padding-top: 5%; margin:1%;padding-bottom: 5%;margin-left:-10%;width:115%;">
+        <section class="forceCommunityHeadline">
+            <p class="headlineInfo">
+                <img class="img-circle" alt="Profile Picture" src="{!v.pictureSrc}" width="100" height="100" align="Centre"/>
+            </p>
+            <p class="headlineInfo">
+                Your Partner Manager is <b><br/>{!v.UserInfo.FirstName}&nbsp;{!v.UserInfo.LastName}</b></p>
+            <p class="headlineInfo">
+                {!v.UserInfo.City}&nbsp;{!v.UserInfo.State}</p>
+            <p class="headlineInfo">
+                {!v.PtrMngrEMail}</p>
+            <p class="headlineInfo">
+                {!v.UserInfo.Phone}</p>
+        </section>
+    </div>
+</aura:component>

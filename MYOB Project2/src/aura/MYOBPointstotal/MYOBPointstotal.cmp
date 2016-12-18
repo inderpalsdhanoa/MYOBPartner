@@ -1,0 +1,47 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" controller="AccountController">
+    <aura:attribute name="greeting" type="String" default="you have a total of 21 points" />
+    <aura:attribute name="Name" type="String"/>
+    <aura:attribute name="PartnerDetails" type="Account"/>
+    <aura:attribute name="TierValues" type="Integer"/>
+    <aura:attribute name="UserLoyaltyScore" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+   
+    <div id="pgDiv" class="bkgImage">
+        <div style="float:right;margin-right: 2%; width:10%;">
+            <aura:renderIf isTrue="{!v.PartnerDetails.LP_Status__c == 'Silver'}">
+                <img src="{!$Resource.MYOB_Silver}" style="margin-top:5%;"/>
+            </aura:renderIf>
+            <aura:renderIf isTrue="{!v.PartnerDetails.LP_Status__c == 'Gold'}">
+                <img src="{!$Resource.MYOB_Gold}" style="margin-top:5%;"/>
+            </aura:renderIf>
+            <aura:renderIf isTrue="{!v.PartnerDetails.LP_Status__c == 'Purple'}">
+                <img src="{!$Resource.MYOB_Purple}" style="margin-top:5%;"/>
+            </aura:renderIf>
+            <aura:renderIf isTrue="{!v.PartnerDetails.LP_Status__c == 'Diamond'}">
+                <img src="{!$Resource.MYOB_Diamond}" style="margin-top:5%;"/>
+            </aura:renderIf>
+        </div>
+        <div>
+            <h1 style="color:white;">Welcome, you have a total of {!v.PartnerDetails.LP_Points__c} points</h1>
+            <aura:renderif isTrue="{!v.PartnerDetails.LP_Status__c != 'Diamond'}">
+                <h3 style="color:white;">To move up to {!v.PartnerDetails.LP_Next_Status__c} Partner you need another {!v.PartnerDetails.LP_Points_to_upgrade__c} points</h3>
+                <progress class="progress" value="{!v.PartnerDetails.LP_Points__c}" max="{!v.TierValues}"></progress>
+            </aura:renderif>
+        </div>
+        <ul class="slds-has-dividers--around-space  slds-list--horizontal">
+            <aura:iteration items="{!v.UserLoyaltyScore}" var="cus" indexVar="key">
+                <div class="Referrals" style="width: 16%;"> 
+                    <li class="slds-item">
+                        <div class="slds-tile slds-tile--board" style="color:white; padding-left: 10%;padding-right: 20%; width:95%; border-radius: 5%;padding-bottom: 7%;background-color: #8241AA;margin-right: 10%;">
+                            <h3 class="slds-truncate" title="Referrals"  style="color: white;padding-top:5%">{!cus.key} </h3>
+                            <div class="slds-tile__detail slds-text-body--small" style="color: white;">
+                                <div class="slds-text-heading--medium" style="float:left; font-weight: bold;">{!cus.value}</div>
+                                <div class="slds-truncate" style="padding-top: 5%; padding-left: 7%;">points</div>
+                            </div>
+                        </div> 
+                    </li>
+                </div>
+            </aura:iteration>
+        </ul>
+    </div>   
+</aura:component>

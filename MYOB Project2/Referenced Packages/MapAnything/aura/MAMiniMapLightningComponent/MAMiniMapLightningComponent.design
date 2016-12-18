@@ -1,0 +1,9 @@
+<design:component>
+    <design:attribute name="comheight" label="Component Height"/>
+    <design:attribute name="comwidth" label="Component Width"/>
+    <design:attribute name="param1" label="Parameter 1"/>
+    <design:attribute name="param2" label="Parameter 2"/>
+    <design:attribute name="param3" label="Parameter 3"/>
+    <design:attribute name="minimapid" label="MiniMap Id"/>
+    <design:attribute name="domain" label="Community Path"/>
+</design:component>

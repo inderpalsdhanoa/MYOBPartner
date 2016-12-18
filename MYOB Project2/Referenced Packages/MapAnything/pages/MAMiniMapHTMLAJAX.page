@@ -1,0 +1,51 @@
+<apex:page controller="sma.MAMiniMapHTMLAJAX" showHeader="false" applyHtmlTag="false" applyBodyTag="false" standardStylesheets="false">
+<!--MiniMapEsriLayersTest-->
+    
+    <apex:pageMessages ></apex:pageMessages>
+    
+    <div id="{!$CurrentPage.parameters.layerId}_recordsContainer" >
+        
+        
+           <!-- {!LayerSettings}-->
+        
+           
+        <apex:repeat var="r" value="{!LayerSettings['records']}" rendered="{!HasRecords}">
+            <div id="{!r.Id}" lat="{!r[LayerSettings['marker']['lat']]}" lng="{!r[LayerSettings['marker']['lng']]}" type="record" marker-color="{!LayerSettings['marker']['color']}" marker-symbol="{!LayerSettings['marker']['symbol']}">
+                 <table>
+                   <apex:repeat var="f" value="{!LayerSettings['labels']}">
+                        <tr>
+                            <td><apex:outputLabel value="{!f}" /></td>
+                            <td>
+                                <!--<apex:outputField value="{!r[f]}" />-->
+                                
+                                <apex:outputField value="{!r[LayerSettings['labels'][f]]}" />
+                            </td>
+                        </tr>
+                    </apex:repeat>  
+                </table>
+                
+            </div>
+        
+        </apex:repeat>
+        
+             
+    </div><!--{!$ObjectType['Account'].fields[f].Label}-->
+    
+    
+    <apex:outputPanel rendered="{!errorInfo.size > 0}" layout="none">
+        <div id="{!$CurrentPage.parameters.layerId}_errors">
+            <ul>
+                <apex:repeat value="{!errorInfo}" var="e">
+                    <li><span style="color:red;">{!e}</span></li>
+                </apex:repeat>
+                
+                <apex:repeat value="{!DebugInformation}" var="info" >
+                    <li>{!info}</li>
+                </apex:repeat>
+            </ul>
+        </div>
+    </apex:outputPanel>
+    
+    
+    
+</apex:page>

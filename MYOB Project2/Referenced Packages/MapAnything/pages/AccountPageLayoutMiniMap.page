@@ -1,0 +1,3 @@
+<apex:page standardController="Account" showHeader="false" standardStylesheets="false">
+    <c:MapAnythingMiniMap RecordId="{!$CurrentPage.parameters.Id}" />
+</apex:page>

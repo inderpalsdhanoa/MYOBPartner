@@ -1,0 +1,39 @@
+<aura:component controller="AccountController" implements="forceCommunity:availableForAllPageTypes">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="leads" type="List" />
+    <!--<aura:attribute name="InstanceName" type="String" />-->
+    <div class="container" style="background-color: white; width:105%;">
+        <h2 data-aura-rendered-by="16:254;a" style="margin:1%; padding-top:1%;"><b>Leads</b></h2><br/>
+        <table class="table">
+            <thead>
+                <tr > 
+                    <th scope="row"><span title="ID"><b>Date Created</b></span></th>
+                    <th scope="row"><span title="Name"><b>Name</b></span></th>
+                    <th scope="row"><span  title="Name"><b>Lead Status</b></span></th>
+                    <th scope="row"><span title="Name"><b>Lead Source</b></span></th>
+                </tr>
+            </thead>
+            <tbody>               
+                <aura:iteration items="{!v.leads}" var="cus">
+                    <tr>
+                        <td width="15%">
+                            <span><ui:outputDate format='dd-MM-yyyy' value="{!cus.Date_Created__c}"/></span>
+                        </td>
+                        <td  width="25%">
+                            {!cus.Name}
+                            <!--<a value="{!cus.Id}" onclick="{!c.LeadDetail}">{!cus.Name}</a>-->
+                            <!--<a href="{!'/myob/s/lead/'+cus.Id}">{!cus.Name}</a>-->
+                        </td>
+                        <td width="25%">
+                            <span>{!cus.Status}</span> 
+                        </td>
+                        <td width="20%">
+                            <span >{!cus.LeadSource}</span>
+                        </td>
+                    </tr>
+                </aura:iteration>
+            </tbody>    
+        </table>
+        <h2 style="margin:1%;"><a onclick="{!c.AllLeadsStatement}"><b>View All</b></a></h2>
+    </div>
+</aura:component>

@@ -1,0 +1,52 @@
+<aura:component controller="AccountController" implements="forceCommunity:availableForAllPageTypes">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="accounts" type="List" />
+    <!--
+    <ltng:require scripts='/resource/Jquerymin,/resource/bootstrapjs/bootstrap-3.3.7/dist/js/bootstrap.min.js,/resource/css/bootstrap.min.css' />
+    <ltng:require styles="/resource/MYOB_CSS/MYOB_CSS.css"/>
+    -->
+    <div class="container" style="background-color: white;width:105%">
+        <h2 class="listTitle" data-aura-rendered-by="16:254;a" style="margin:1%;"><b>Activity Points</b></h2><br/>
+        <table class="table" >
+            <thead>
+                <tr>
+                    <th scope="row"><span><b>Date</b></span>
+                        <ui:button aura:id="DateAsc" press="{!c.AccntSort}"><div class="arrow-up"></div></ui:button>
+                        <ui:button aura:id="DateDsc" press="{!c.AccntSort}"><div class="arrow-down"></div></ui:button>
+                    </th>
+                    <th scope="row"><span><b>Category</b></span>
+                        <ui:button aura:id="CategorygAsc" press="{!c.AccntSort}"><div class="arrow-up"></div></ui:button>
+                        <ui:button aura:id="CategoryDsc" press="{!c.AccntSort}"><div class="arrow-down"></div></ui:button>
+                    </th>
+                    <th scope="row"><span><b>Activity</b></span>
+                        <ui:button aura:id="ActivityAsc" press="{!c.AccntSort}"><div class="arrow-up"></div></ui:button>
+                        <ui:button aura:id="ActivityDsc" press="{!c.AccntSort}"><div class="arrow-down"></div></ui:button> 
+                    </th>
+                    <th scope="row"><span><b>Points</b></span>
+                        <ui:button aura:id="PointsAsc" press="{!c.AccntSort}"><div class="arrow-up"></div></ui:button>
+                        <ui:button aura:id="PointsDsc" press="{!c.AccntSort}"><div class="arrow-down"></div></ui:button> 
+                    </th>
+                </tr>
+            </thead>
+            <tbody>               
+                <aura:iteration items="{!v.accounts}" var="cus">
+                    <tr>
+                        <td width="10%">
+                            <span><ui:outputDate format='dd-MM-yyyy' value="{!cus.LP_Activity_Date__c}"/></span>
+                        </td>
+                        <td width="20%">
+                            <span >{!cus.LP_Points_Category__c}</span> 
+                        </td>
+                        <td width="25%">
+                            <span >{!cus.LP_Activity__c}</span>
+                        </td>
+                        <td width="10%">
+                            <span >{!cus.LP_Points__c}</span>
+                        </td>                     
+                    </tr>
+                </aura:iteration>
+            </tbody>    
+        </table>
+        <h2 style="margin:1%;"><a onclick="{!c.AllActvStmnt}"><b>View All</b></a></h2>
+    </div>
+</aura:component>

@@ -1,0 +1,1858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>API_Error_Status</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>API Error: Status=</shortDescription>
+        <value>API Error: Status=</value>
+    </labels>
+    <labels>
+        <fullName>API_Host</fullName>
+        <categories>Settings Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>API Host</shortDescription>
+        <value>API Host</value>
+    </labels>
+    <labels>
+        <fullName>Abort</fullName>
+        <categories>Settings Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Abort</shortDescription>
+        <value>Off</value>
+    </labels>
+    <labels>
+        <fullName>Abort_Self_Scheduler</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Abort Self Scheduler</shortDescription>
+        <value>Abort Response Sync</value>
+    </labels>
+    <labels>
+        <fullName>Account</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Account</shortDescription>
+        <value>Account</value>
+    </labels>
+    <labels>
+        <fullName>Actions</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Actions</shortDescription>
+        <value>Actions</value>
+    </labels>
+    <labels>
+        <fullName>Activate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Activate</shortDescription>
+        <value>Activate</value>
+    </labels>
+    <labels>
+        <fullName>Activate_Survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Activate Survey</shortDescription>
+        <value>Activate Survey</value>
+    </labels>
+    <labels>
+        <fullName>Add_Rule</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add Rule</shortDescription>
+        <value>Add Rule</value>
+    </labels>
+    <labels>
+        <fullName>Add_more</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add more</shortDescription>
+        <value>Add more</value>
+    </labels>
+    <labels>
+        <fullName>And</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>And</shortDescription>
+        <value>and</value>
+    </labels>
+    <labels>
+        <fullName>Any_Email_Address</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Any Email Address</shortDescription>
+        <value>Any Email Address</value>
+    </labels>
+    <labels>
+        <fullName>Apply_Delay</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Apply Delay</shortDescription>
+        <value>Delay</value>
+    </labels>
+    <labels>
+        <fullName>Attach_Survey_responses_to_contact_record_on_lead_conversion</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Attach Survey responses to contact record on lead conversion</shortDescription>
+        <value>Attach Survey responses to contact record on lead conversion.</value>
+    </labels>
+    <labels>
+        <fullName>Back</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Back</shortDescription>
+        <value>Back</value>
+    </labels>
+    <labels>
+        <fullName>Begining</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Begining</shortDescription>
+        <value>Start</value>
+    </labels>
+    <labels>
+        <fullName>Body</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Body</shortDescription>
+        <value>Body</value>
+    </labels>
+    <labels>
+        <fullName>CallOut_Environment</fullName>
+        <categories>Settings Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CallOut Environment</shortDescription>
+        <value>SurveyMonkey API Host</value>
+    </labels>
+    <labels>
+        <fullName>Callback_Monitor</fullName>
+        <categories>Settings Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Callback Monitor</shortDescription>
+        <value>Response Sync</value>
+    </labels>
+    <labels>
+        <fullName>Campaign</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Campaign</shortDescription>
+        <value>Campaign</value>
+    </labels>
+    <labels>
+        <fullName>CampaignName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CampaignName</shortDescription>
+        <value>Campaign Name</value>
+    </labels>
+    <labels>
+        <fullName>Campaign_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Campaign Name</shortDescription>
+        <value>Campaign Name</value>
+    </labels>
+    <labels>
+        <fullName>Campaigns</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Campaigns</shortDescription>
+        <value>Campaigns</value>
+    </labels>
+    <labels>
+        <fullName>Cancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Case</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Case</shortDescription>
+        <value>Case</value>
+    </labels>
+    <labels>
+        <fullName>Case_Number</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Case Number</shortDescription>
+        <value>Case Number</value>
+    </labels>
+    <labels>
+        <fullName>Cases</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cases</shortDescription>
+        <value>Cases</value>
+    </labels>
+    <labels>
+        <fullName>Clear</fullName>
+        <categories>Settings Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Clear</shortDescription>
+        <value>Clear</value>
+    </labels>
+    <labels>
+        <fullName>Close</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Close</shortDescription>
+        <value>Close</value>
+    </labels>
+    <labels>
+        <fullName>Confirm</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Confirm</shortDescription>
+        <value>Are you sure?</value>
+    </labels>
+    <labels>
+        <fullName>Confirm_Settings</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Confirm Settings</shortDescription>
+        <value>Confirm Settings</value>
+    </labels>
+    <labels>
+        <fullName>Contact</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact</shortDescription>
+        <value>Contact</value>
+    </labels>
+    <labels>
+        <fullName>Contact_Email</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Email</shortDescription>
+        <value>Contact Email</value>
+    </labels>
+    <labels>
+        <fullName>Contact_First_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact First Name</shortDescription>
+        <value>Contact First Name</value>
+    </labels>
+    <labels>
+        <fullName>Contact_Last_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Last Name</shortDescription>
+        <value>Contact Last Name</value>
+    </labels>
+    <labels>
+        <fullName>Contact_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Name</shortDescription>
+        <value>Contact Name</value>
+    </labels>
+    <labels>
+        <fullName>Contacts</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contacts</shortDescription>
+        <value>Contacts</value>
+    </labels>
+    <labels>
+        <fullName>Continue</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Continue</shortDescription>
+        <value>Continue</value>
+    </labels>
+    <labels>
+        <fullName>Create_a_new_Survey_Campaign</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Create a new Survey Campaign</shortDescription>
+        <value>Create a new Survey</value>
+    </labels>
+    <labels>
+        <fullName>Custom</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Custom</shortDescription>
+        <value>Custom</value>
+    </labels>
+    <labels>
+        <fullName>Custom_Recipient_Filters</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Custom Recipient Filters</shortDescription>
+        <value>Custom Recipient Filters</value>
+    </labels>
+    <labels>
+        <fullName>Custom_Recipient_filter</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Custom Recipient filter</shortDescription>
+        <value>Custom Recipient filter</value>
+    </labels>
+    <labels>
+        <fullName>Deactivate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Deactivate</shortDescription>
+        <value>Deactivate</value>
+    </labels>
+    <labels>
+        <fullName>Deactivate_Survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Deactivate Survey</shortDescription>
+        <value>Deactivate Survey</value>
+    </labels>
+    <labels>
+        <fullName>Delay</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delay</shortDescription>
+        <value>Delay</value>
+    </labels>
+    <labels>
+        <fullName>Delay_of</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delay of</shortDescription>
+        <value>Delay of</value>
+    </labels>
+    <labels>
+        <fullName>Delete</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>Delete_Only_Responses_and_Recipient</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete_Only_Responses_and_Recipient</shortDescription>
+        <value>Delete Only Responses and Recipient</value>
+    </labels>
+    <labels>
+        <fullName>Delete_Survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete Survey</shortDescription>
+        <value>Delete Survey</value>
+    </labels>
+    <labels>
+        <fullName>Delete_Survey_Campaign</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete_Survey_Campaign</shortDescription>
+        <value>Delete Survey Campaign</value>
+    </labels>
+    <labels>
+        <fullName>Edit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Edit</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>Edit_to_add_more_recipents</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Edit to add more recipents</shortDescription>
+        <value>Edit to add more recipients</value>
+    </labels>
+    <labels>
+        <fullName>Email</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email</shortDescription>
+        <value>Email</value>
+    </labels>
+    <labels>
+        <fullName>EmailTCancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>EmailTCancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>EmailTReplyTo</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>EmailTReplyTo</shortDescription>
+        <value>Reply-To</value>
+    </labels>
+    <labels>
+        <fullName>EmailTemplateName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>EmailTemplateName</shortDescription>
+        <value>Template Name</value>
+    </labels>
+    <labels>
+        <fullName>Email_Template</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Template</shortDescription>
+        <value>Email Template</value>
+    </labels>
+    <labels>
+        <fullName>Email_Template_Preview</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Template Preview</shortDescription>
+        <value>Email Template Preview</value>
+    </labels>
+    <labels>
+        <fullName>Email_has_been_sent</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email has been sent.</shortDescription>
+        <value>Email has been sent.</value>
+    </labels>
+    <labels>
+        <fullName>End_date_doesnt_match_per_selected_recurring_interval</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>End date doesnt match per selected recurring interval.</shortDescription>
+        <value>End date doesn&apos;t align with selected recurrence interval.</value>
+    </labels>
+    <labels>
+        <fullName>Ending</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Ending</shortDescription>
+        <value>End</value>
+    </labels>
+    <labels>
+        <fullName>Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error:</shortDescription>
+        <value>Error:</value>
+    </labels>
+    <labels>
+        <fullName>Error_in_API_Response</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error in API Response :</shortDescription>
+        <value>Error in API Response :</value>
+    </labels>
+    <labels>
+        <fullName>Existing_List_View</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Existing List View</shortDescription>
+        <value>Existing List View</value>
+    </labels>
+    <labels>
+        <fullName>Existing_Report</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Existing Report</shortDescription>
+        <value>Existing Report</value>
+    </labels>
+    <labels>
+        <fullName>Field</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Field</shortDescription>
+        <value>Field</value>
+    </labels>
+    <labels>
+        <fullName>Filter_Matches</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Filter Matches</shortDescription>
+        <value>Matching Recipients</value>
+    </labels>
+    <labels>
+        <fullName>Filters</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Filters</shortDescription>
+        <value>Filters</value>
+    </labels>
+    <labels>
+        <fullName>First</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>First</shortDescription>
+        <value>First</value>
+    </labels>
+    <labels>
+        <fullName>First_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>First Name</shortDescription>
+        <value>First Name</value>
+    </labels>
+    <labels>
+        <fullName>Folder</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Folder</shortDescription>
+        <value>Folder</value>
+    </labels>
+    <labels>
+        <fullName>From</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>From</shortDescription>
+        <value>Reply-To</value>
+    </labels>
+    <labels>
+        <fullName>From_Address</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>From Address</shortDescription>
+        <value>From Address</value>
+    </labels>
+    <labels>
+        <fullName>GetStarted</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>GetStarted</shortDescription>
+        <value>Get Started</value>
+    </labels>
+    <labels>
+        <fullName>HTML_Preview</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HTML Preview</shortDescription>
+        <value>HTML Preview</value>
+    </labels>
+    <labels>
+        <fullName>Hours</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Hours</shortDescription>
+        <value>Hours</value>
+    </labels>
+    <labels>
+        <fullName>INFO</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>INFO</shortDescription>
+        <value>INFO</value>
+    </labels>
+    <labels>
+        <fullName>Important_message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Important message</shortDescription>
+        <value>Notice</value>
+    </labels>
+    <labels>
+        <fullName>Initiate</fullName>
+        <categories>Settings Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Initiate</shortDescription>
+        <value>On</value>
+    </labels>
+    <labels>
+        <fullName>Initiate_Self_Scheduler</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Initiate Self Scheduler</shortDescription>
+        <value>Insufficient permissions on</value>
+    </labels>
+    <labels>
+        <fullName>Insufficient_permission_on</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Insufficient permission on</shortDescription>
+        <value>Insufficient permission on</value>
+    </labels>
+    <labels>
+        <fullName>Insufficient_permission_on_Collector_Please_contact_System_Administrator</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Insufficient permission on Collector. Please contact System Administrator.</shortDescription>
+        <value>Insufficient permission on Collector. Please contact System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Invalid_User</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Invalid User</shortDescription>
+        <value>Invalid User</value>
+    </labels>
+    <labels>
+        <fullName>Last</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Last</shortDescription>
+        <value>Last</value>
+    </labels>
+    <labels>
+        <fullName>Last_Modified</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Last Modified</shortDescription>
+        <value>Last Modified</value>
+    </labels>
+    <labels>
+        <fullName>Last_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Last Name</shortDescription>
+        <value>Last Name</value>
+    </labels>
+    <labels>
+        <fullName>Lead</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Lead</shortDescription>
+        <value>Lead</value>
+    </labels>
+    <labels>
+        <fullName>Lead_Email</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Lead Email</shortDescription>
+        <value>Lead Email</value>
+    </labels>
+    <labels>
+        <fullName>Lead_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Lead Name</shortDescription>
+        <value>Lead Name</value>
+    </labels>
+    <labels>
+        <fullName>Lead_Source</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Lead Source</shortDescription>
+        <value>Lead Source</value>
+    </labels>
+    <labels>
+        <fullName>Leads</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Leads</shortDescription>
+        <value>Leads</value>
+    </labels>
+    <labels>
+        <fullName>Link_to_OAuth_page_in_Salesforce</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Link to OAuth page in Salesforce</shortDescription>
+        <value>Link to OAuth page in Salesforce</value>
+    </labels>
+    <labels>
+        <fullName>Linked_SurveyMonkey_Account</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Linked SurveyMonkey Account</shortDescription>
+        <value>Linked SurveyMonkey Account</value>
+    </labels>
+    <labels>
+        <fullName>Loading</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Loading</shortDescription>
+        <value>Loading</value>
+    </labels>
+    <labels>
+        <fullName>Log_Exception</fullName>
+        <categories>Settings Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Log Exception</shortDescription>
+        <value>Log Exceptions</value>
+    </labels>
+    <labels>
+        <fullName>LoginUsingEA</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LoginUsingEA</shortDescription>
+        <value>Please login with a SurveyMonkey Enterprise account.</value>
+    </labels>
+    <labels>
+        <fullName>LoginUsingSM</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LoginUsingSM</shortDescription>
+        <value>Please login with a SurveyMonkey account linked to the SurveyMonkey Enterprise Group:</value>
+    </labels>
+    <labels>
+        <fullName>Login_Success</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Login Success</shortDescription>
+        <value>Login Success</value>
+    </labels>
+    <labels>
+        <fullName>Manage_Email_Templates</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Manage Email Templates</shortDescription>
+        <value>Manage email templates</value>
+    </labels>
+    <labels>
+        <fullName>Manage_Your_Surveys</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Manage Your Surveys</shortDescription>
+        <value>Manage surveys</value>
+    </labels>
+    <labels>
+        <fullName>Manual</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Manual</shortDescription>
+        <value>Manual</value>
+    </labels>
+    <labels>
+        <fullName>Max_Surveys</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Max Surveys</shortDescription>
+        <value>Max Surveys</value>
+    </labels>
+    <labels>
+        <fullName>MergeFieldMap</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MergeFieldMap</shortDescription>
+        <value>({!Contact.FirstName},[FirstName]),
+({!Contact.LastName},[LastName]),
+({!Contact.Email},[Email]),
+({!Lead.FirstName},[FirstName]),
+({!Lead.LastName},[LastName]),
+({!Lead.Email},[Email]),
+({!SurveyMonkey.RemoveLink},[RemoveLink]),
+({!SurveyMonkey.SurveyLink},[SurveyLink])</value>
+    </labels>
+    <labels>
+        <fullName>Message_on_template</fullName>
+        <categories>Email template</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Message on template</shortDescription>
+        <value>Please add the {!SurveyMonkey.SurveyLink} and {!SurveyMonkey.RemoveLink} placeholders to your selected template before continuing.</value>
+    </labels>
+    <labels>
+        <fullName>Method_of_Sending</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Method of Sending</shortDescription>
+        <value>Type</value>
+    </labels>
+    <labels>
+        <fullName>My_Personal_Email_Templates</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>My_Personal_Email_Templates</shortDescription>
+        <value>My Personal Email Templates</value>
+    </labels>
+    <labels>
+        <fullName>NA</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NA</shortDescription>
+        <value>NA</value>
+    </labels>
+    <labels>
+        <fullName>Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>New_Survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New Survey</shortDescription>
+        <value>New Survey</value>
+    </labels>
+    <labels>
+        <fullName>New_Template_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New Template Name</shortDescription>
+        <value>New Template Name</value>
+    </labels>
+    <labels>
+        <fullName>Next</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Next</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>No</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No</shortDescription>
+        <value>No</value>
+    </labels>
+    <labels>
+        <fullName>No_Delay</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No Delay</shortDescription>
+        <value>No Delay</value>
+    </labels>
+    <labels>
+        <fullName>No_Survey_Template_Selected</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No Survey Template Selected</shortDescription>
+        <value>No Survey Template Selected</value>
+    </labels>
+    <labels>
+        <fullName>No_Template_Selected</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No Template Selected</shortDescription>
+        <value>No Template Selected</value>
+    </labels>
+    <labels>
+        <fullName>No_data_available_in_table</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No data available in table</shortDescription>
+        <value>No records found.</value>
+    </labels>
+    <labels>
+        <fullName>No_filter_criteria_specified</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No filter criteria specified. Please specify appropriate filter criteria!</shortDescription>
+        <value>No filter criteria specified.</value>
+    </labels>
+    <labels>
+        <fullName>No_matching_records_found</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No matching records found</shortDescription>
+        <value>No matching records found</value>
+    </labels>
+    <labels>
+        <fullName>No_recipients_selected_or_searched_please_change_your_selection_s_and_try_agai</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No recipients selected or searched, please change your selection(s) and try agai</shortDescription>
+        <value>No recipients selected or searched, please change your selection(s) and try again.</value>
+    </labels>
+    <labels>
+        <fullName>No_records_found</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No records found.</shortDescription>
+        <value>No records found.</value>
+    </labels>
+    <labels>
+        <fullName>No_records_found_for_selected_object</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No records found for selected object.</shortDescription>
+        <value>No records found for selected object.</value>
+    </labels>
+    <labels>
+        <fullName>No_records_found_for_the_selected_ListView</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No records found for the selected ListView</shortDescription>
+        <value>No records found for the selected ListView</value>
+    </labels>
+    <labels>
+        <fullName>No_records_found_for_the_selected_criteria_Please_refine_your_search</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No records found for the selected criteria.Please refine your search.</shortDescription>
+        <value>No records found for the selected criteria.Please refine your search.</value>
+    </labels>
+    <labels>
+        <fullName>None</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>None</shortDescription>
+        <value>--None--</value>
+    </labels>
+    <labels>
+        <fullName>Number_of_Records</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Number of Records</shortDescription>
+        <value>Showing Records</value>
+    </labels>
+    <labels>
+        <fullName>OK</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>OK</shortDescription>
+        <value>OK</value>
+    </labels>
+    <labels>
+        <fullName>OOPS_somthing_went_wrong_Please_contact_your_administrator</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>OOPS! somthing went wrong. Please contact your administrator.</shortDescription>
+        <value>OOPS! somthing went wrong. Please contact your administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Object</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Object</shortDescription>
+        <value>Object</value>
+    </labels>
+    <labels>
+        <fullName>Of</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Of</shortDescription>
+        <value>Of</value>
+    </labels>
+    <labels>
+        <fullName>Operator</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Operator</shortDescription>
+        <value>Operator</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Opportunity</shortDescription>
+        <value>Opportunity</value>
+    </labels>
+    <labels>
+        <fullName>Owner</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Owner</shortDescription>
+        <value>Owner</value>
+    </labels>
+    <labels>
+        <fullName>Please_Go_to_Settings_tab_under_SurveyMonkey_and_authorize</fullName>
+        <categories>RecieveCallbackController</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please Go to Settings tab under SurveyMonkey and authorize</shortDescription>
+        <value>Please go to Settings sub-tab under the SurveyMonkey tab, and update your Linked SurveyMonkey Account by clicking Reauthorize</value>
+    </labels>
+    <labels>
+        <fullName>Please_Select_a_Email_template</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please Select a Email template</shortDescription>
+        <value>Please select an email template</value>
+    </labels>
+    <labels>
+        <fullName>Please_Wait</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please Wait</shortDescription>
+        <value>Please Wait...</value>
+    </labels>
+    <labels>
+        <fullName>Please_contact_System_Administrator</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please contact System Administrator.</shortDescription>
+        <value>Please contact your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Please_enter_Send_no_more</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please enter &apos;Send no more.&apos;</shortDescription>
+        <value>Incomplete Touch Rule Specification</value>
+    </labels>
+    <labels>
+        <fullName>Please_enter_required_field_From</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please enter required field \&apos;From:\&apos;</shortDescription>
+        <value>Please enter required field \&apos;From:\&apos;</value>
+    </labels>
+    <labels>
+        <fullName>Please_enter_required_field_Reply_To</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please enter required field \&apos;Reply To:\</shortDescription>
+        <value>Please enter required field \&apos;Reply To:\</value>
+    </labels>
+    <labels>
+        <fullName>Please_enter_required_field_To</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please enter required field To</shortDescription>
+        <value>Please enter required field To:</value>
+    </labels>
+    <labels>
+        <fullName>Please_enter_surveys_every</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please enter &apos;surveys every&apos;.</shortDescription>
+        <value>Incomplete Touch Rule Specification</value>
+    </labels>
+    <labels>
+        <fullName>Please_input_survey_end_date</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please input survey end date.</shortDescription>
+        <value>Please input the Survey End Date.</value>
+    </labels>
+    <labels>
+        <fullName>Please_input_survey_recurring_frequency</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please input survey recurring frequency.</shortDescription>
+        <value>Please input survey recurrence frequency.</value>
+    </labels>
+    <labels>
+        <fullName>Please_input_survey_start_date</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please input survey start date</shortDescription>
+        <value>Please input the Survey Start Date.</value>
+    </labels>
+    <labels>
+        <fullName>Please_input_valid_number_of_hours_for_delay_greater_than_or_equal_to_0</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please input valid number of hours for delay(greater than or equal to 0).</shortDescription>
+        <value>Please input valid number of hours for delay(greater than or equal to 0).</value>
+    </labels>
+    <labels>
+        <fullName>Please_input_valid_start_and_end_date</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please input valid start and end date</shortDescription>
+        <value>Please input valid start and end date (start date should be less than end date).</value>
+    </labels>
+    <labels>
+        <fullName>Please_select_Method_of_sending</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please select Method of sending.</shortDescription>
+        <value>Please select Method of sending.</value>
+    </labels>
+    <labels>
+        <fullName>Please_select_Recipient_Source</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please select Recipient Source.</shortDescription>
+        <value>Please select Recipient Source.</value>
+    </labels>
+    <labels>
+        <fullName>Please_select_any_criteria_for_the_trigger_event</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please select any criteria for the trigger event.</shortDescription>
+        <value>Please select trigger criteria.</value>
+    </labels>
+    <labels>
+        <fullName>Please_select_the_Record_Type</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please select the &apos;Record Type&apos;.</shortDescription>
+        <value>Please select the &apos;Record Type&apos;.</value>
+    </labels>
+    <labels>
+        <fullName>Please_select_valid_List_View</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please select valid List View.</shortDescription>
+        <value>Please select a valid List View.</value>
+    </labels>
+    <labels>
+        <fullName>Please_specify_collector_name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please specify collector name.</shortDescription>
+        <value>Please specify a name for your survey.</value>
+    </labels>
+    <labels>
+        <fullName>Preview</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Preview</shortDescription>
+        <value>Preview</value>
+    </labels>
+    <labels>
+        <fullName>Previous</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Previous</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>QueueName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>QueueName</shortDescription>
+        <value>Queue Name</value>
+    </labels>
+    <labels>
+        <fullName>Reauthorize</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Reauthorize</shortDescription>
+        <value>Reauthorize</value>
+    </labels>
+    <labels>
+        <fullName>Reauthorize_completed_successfully</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Reauthorize completed successfully</shortDescription>
+        <value>Reauthorization successful</value>
+    </labels>
+    <labels>
+        <fullName>Recipient_Filter_Source</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Recipient Filter Source</shortDescription>
+        <value>Recipient Filters</value>
+    </labels>
+    <labels>
+        <fullName>Recipient_Source</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Recipient Source</shortDescription>
+        <value>Recipient Source</value>
+    </labels>
+    <labels>
+        <fullName>Recipients</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Recipients</shortDescription>
+        <value>Recipients</value>
+    </labels>
+    <labels>
+        <fullName>Recurring</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Recurring</shortDescription>
+        <value>Recurring</value>
+    </labels>
+    <labels>
+        <fullName>Recurring_Survey_Processor</fullName>
+        <categories>Settings</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Recurring Survey Processor</shortDescription>
+        <value>Recurring Survey Processor</value>
+    </labels>
+    <labels>
+        <fullName>Recurring_Type_Full_Plural</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Recurring label (plural) for Survey List</shortDescription>
+        <value>Recurring every {0} {1}</value>
+    </labels>
+    <labels>
+        <fullName>Recurring_Type_Full_Singular</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Recurring label (singular) for Survey List</shortDescription>
+        <value>Recurring every {0}</value>
+    </labels>
+    <labels>
+        <fullName>Reply_to</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Reply to</shortDescription>
+        <value>Reply-To</value>
+    </labels>
+    <labels>
+        <fullName>Respondents</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Respondents</shortDescription>
+        <value>Respondents</value>
+    </labels>
+    <labels>
+        <fullName>Response_recieving_process_did_not_initiate_please_go_to_settings_tab_and_try</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Response_recieving_process_did_not_initiate_please_go_to_settings_tab_and_try</shortDescription>
+        <value>Response receiving process did not initiate. Please go to settings tab and try again.</value>
+    </labels>
+    <labels>
+        <fullName>SM_SF_Pro_Error_Msg</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SM SF Pro Error Msg</shortDescription>
+        <value>Your Organization is not enabled for SurveyMonkey Salesforce Pro. Please contact your system administrator</value>
+    </labels>
+    <labels>
+        <fullName>Salesforce_Oauth</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Salesforce Oauth</shortDescription>
+        <value>Salesforce Oauth</value>
+    </labels>
+    <labels>
+        <fullName>Save</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Save_As_new_Email_Template</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save As new Email Template</shortDescription>
+        <value>Save As New Email Template</value>
+    </labels>
+    <labels>
+        <fullName>Save_Send</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save/Send</shortDescription>
+        <value>Save/Send</value>
+    </labels>
+    <labels>
+        <fullName>Save_Settings</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save Settings</shortDescription>
+        <value>Save Settings</value>
+    </labels>
+    <labels>
+        <fullName>Save_Template</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save Template</shortDescription>
+        <value>Save as new email template</value>
+    </labels>
+    <labels>
+        <fullName>Save_Template_Error</fullName>
+        <categories>EmailTemplateSelector</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save Template Error</shortDescription>
+        <value>Please choose a different template name</value>
+    </labels>
+    <labels>
+        <fullName>Search</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>Select_List_View</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select List View</shortDescription>
+        <value>List View</value>
+    </labels>
+    <labels>
+        <fullName>Select_Method_of_Sending</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select Method of Sending</shortDescription>
+        <value>Select Type</value>
+    </labels>
+    <labels>
+        <fullName>Select_Recipients</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select Recipients</shortDescription>
+        <value>Select Recipients</value>
+    </labels>
+    <labels>
+        <fullName>Select_Report</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select Report</shortDescription>
+        <value>Select Report</value>
+    </labels>
+    <labels>
+        <fullName>Select_a_Survey_Template</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select a Survey Template</shortDescription>
+        <value>Select a Survey Template</value>
+    </labels>
+    <labels>
+        <fullName>Select_an_Email_Template</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select an Email Template</shortDescription>
+        <value>Select an Email Template</value>
+    </labels>
+    <labels>
+        <fullName>Send_Date</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Send Date</shortDescription>
+        <value>Send Date</value>
+    </labels>
+    <labels>
+        <fullName>Send_Test_Email</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Send Test Email</shortDescription>
+        <value>Send Test Email</value>
+    </labels>
+    <labels>
+        <fullName>Send_every</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Send every</shortDescription>
+        <value>Frequency</value>
+    </labels>
+    <labels>
+        <fullName>Send_no_more_than</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Send no more than</shortDescription>
+        <value>Send no more than</value>
+    </labels>
+    <labels>
+        <fullName>Settings</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Settings</shortDescription>
+        <value>Settings</value>
+    </labels>
+    <labels>
+        <fullName>Settings_saved_successfully</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Settings saved successfully.</shortDescription>
+        <value>Settings saved successfully.</value>
+    </labels>
+    <labels>
+        <fullName>Showing</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Showing</shortDescription>
+        <value>Showing</value>
+    </labels>
+    <labels>
+        <fullName>Subject</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Subject</shortDescription>
+        <value>Subject</value>
+    </labels>
+    <labels>
+        <fullName>SurveyMonkey_Surver_error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SurveyMonkey Surver error :</shortDescription>
+        <value>SurveyMonkey API error :</value>
+    </labels>
+    <labels>
+        <fullName>Survey_Campaign</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Campaign</shortDescription>
+        <value>Surveys</value>
+    </labels>
+    <labels>
+        <fullName>Survey_Campaign_List</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Campaign List</shortDescription>
+        <value>Survey List</value>
+    </labels>
+    <labels>
+        <fullName>Survey_Campaign_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Campaign Name</shortDescription>
+        <value>Survey Name</value>
+    </labels>
+    <labels>
+        <fullName>Survey_Confirmation</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Confirmation</shortDescription>
+        <value>Survey Confirmation</value>
+    </labels>
+    <labels>
+        <fullName>Survey_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Name</shortDescription>
+        <value>Survey Name</value>
+    </labels>
+    <labels>
+        <fullName>Survey_Preview</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Preview</shortDescription>
+        <value>Survey Preview</value>
+    </labels>
+    <labels>
+        <fullName>Survey_Template</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Template</shortDescription>
+        <value>Survey Template</value>
+    </labels>
+    <labels>
+        <fullName>Survey_Template_Preview</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Template Preview</shortDescription>
+        <value>Survey Template Preview</value>
+    </labels>
+    <labels>
+        <fullName>Surveymonkey_placeholder_messasge</fullName>
+        <categories>Email template</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Surveymonkey placeholder messasge</shortDescription>
+        <value>The following SurveyMonkey placeholders must be included in your selected template:</value>
+    </labels>
+    <labels>
+        <fullName>Surveymonkey_placeholder_messasge2</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Surveymonkey_placeholder_messasge2</shortDescription>
+        <value>FirstName, LastName and Email placeholders from both Contacts and Leads will also be populated if present.</value>
+    </labels>
+    <labels>
+        <fullName>Template</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Template</shortDescription>
+        <value>Template</value>
+    </labels>
+    <labels>
+        <fullName>Template_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Template Name</shortDescription>
+        <value>Template Name</value>
+    </labels>
+    <labels>
+        <fullName>The_Rule_you_are_trying_to_create_is_already_exist</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>The Rule you are trying to create is already exist.</shortDescription>
+        <value>Touch Rule already exists.</value>
+    </labels>
+    <labels>
+        <fullName>There_is_no_token_found_for_an_API_call_Please_contact_to_your_administrator</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>There is no token found for an API call. Please contact to your administrator.</shortDescription>
+        <value>No API token found.  Please contact to your administrator.</value>
+    </labels>
+    <labels>
+        <fullName>This_account_is_not_of_type_Enterprise</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>This account is not of type Enterprise&apos;, try with different account?</shortDescription>
+        <value>Please login with a SurveyMonkey Enterprise account.</value>
+    </labels>
+    <labels>
+        <fullName>This_survey_has_been_deactivated_due_to_invalid_recipient_list_criteria</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>This survey has been deactivated due to invalid recipient list criteria</shortDescription>
+        <value>This survey has been deactivated due to invalid recipient list criteria. Please update the criteria before activating the survey.</value>
+    </labels>
+    <labels>
+        <fullName>Time_Period</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Time Period</shortDescription>
+        <value>Time Period</value>
+    </labels>
+    <labels>
+        <fullName>Total_Number_of_Records</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Total Number of Records</shortDescription>
+        <value>Total Number of Records</value>
+    </labels>
+    <labels>
+        <fullName>Touch_Rules</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Touch Rules</shortDescription>
+        <value>Touch Rules</value>
+    </labels>
+    <labels>
+        <fullName>Trigger</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Trigger</shortDescription>
+        <value>Trigger</value>
+    </labels>
+    <labels>
+        <fullName>Trigger_Delay_Type</fullName>
+        <categories>This is used for the Trigger Delay Type</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Trigger Delay Type</shortDescription>
+        <value>Hours</value>
+    </labels>
+    <labels>
+        <fullName>Triggered</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Triggered</shortDescription>
+        <value>Triggered</value>
+    </labels>
+    <labels>
+        <fullName>Triggered_Filters</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Triggered Filters</shortDescription>
+        <value>Triggered Filters</value>
+    </labels>
+    <labels>
+        <fullName>Triggered_Survey_Processor</fullName>
+        <categories>settings</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Triggered Survey Processor</shortDescription>
+        <value>Triggered Survey Processor</value>
+    </labels>
+    <labels>
+        <fullName>Triggered_Type_Full</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Triggered label for Survey List</shortDescription>
+        <value>Triggered on {0}</value>
+    </labels>
+    <labels>
+        <fullName>Turn_on_Switch</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Turn on Switch</shortDescription>
+        <value>Enable Response Sync</value>
+    </labels>
+    <labels>
+        <fullName>Type</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Type</shortDescription>
+        <value>Type</value>
+    </labels>
+    <labels>
+        <fullName>Unable_to_connect_to_SurveyMonkey_Please_try_again</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Unable to connect to SurveyMonkey - Please try again.</shortDescription>
+        <value>Unable to connect to SurveyMonkey - Please try again.</value>
+    </labels>
+    <labels>
+        <fullName>Unable_to_update_CallBack_Monitor_Please_try_again</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Unable to update CallBack Monitor. Please try again.</shortDescription>
+        <value>Unable to update &apos;Response Sync&apos; setting. Please try again.</value>
+    </labels>
+    <labels>
+        <fullName>Unable_to_update_Log_Exception_Please_try_again</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Unable to update Log Exception. Please try again.</shortDescription>
+        <value>Unable to update &apos;Log Exceptions&apos; setting. Please try again.</value>
+    </labels>
+    <labels>
+        <fullName>Unified_Public_Email_templates</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Unified Public Email templates</shortDescription>
+        <value>Unified Public Email templates</value>
+    </labels>
+    <labels>
+        <fullName>User</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>User</shortDescription>
+        <value>User</value>
+    </labels>
+    <labels>
+        <fullName>Users</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Users</shortDescription>
+        <value>Users</value>
+    </labels>
+    <labels>
+        <fullName>Value</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Value</shortDescription>
+        <value>Value</value>
+    </labels>
+    <labels>
+        <fullName>Would_you_like_to_save_the_changes_as_new_email_template</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Would you like to save the changes as new email template</shortDescription>
+        <value>Would you like to save the changes as a new email template?</value>
+    </labels>
+    <labels>
+        <fullName>Yes</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Yes</shortDescription>
+        <value>Yes</value>
+    </labels>
+    <labels>
+        <fullName>Your_administrator_has_set_only_System_generated_emails_to_go_out</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Your administrator has set only System generated emails to go out.</shortDescription>
+        <value>Your administrator has disabled delivery of non-System generated emails.</value>
+    </labels>
+    <labels>
+        <fullName>Your_changes_will_be_lost_are_you_sure</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Your changes will be lost, are you sure?</shortDescription>
+        <value>Your changes will be lost, are you sure?</value>
+    </labels>
+    <labels>
+        <fullName>Your_selected_template_unprocessed_placeholder_message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Your selected template unprocessed placeholder message</shortDescription>
+        <value>Your selected template contains placeholders we cannot populate. Are you sure you want to use the selected template?</value>
+    </labels>
+    <labels>
+        <fullName>contains</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>contains</shortDescription>
+        <value>contains</value>
+    </labels>
+    <labels>
+        <fullName>day</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>day</shortDescription>
+        <value>day</value>
+    </labels>
+    <labels>
+        <fullName>day_plural</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>day plural</shortDescription>
+        <value>days</value>
+    </labels>
+    <labels>
+        <fullName>days</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>day(s)</shortDescription>
+        <value>day(s)</value>
+    </labels>
+    <labels>
+        <fullName>does_not_contain</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>does not contain</shortDescription>
+        <value>does not contain</value>
+    </labels>
+    <labels>
+        <fullName>equals</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>equals</shortDescription>
+        <value>equals</value>
+    </labels>
+    <labels>
+        <fullName>every</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>every</shortDescription>
+        <value>every</value>
+    </labels>
+    <labels>
+        <fullName>get_survey_list</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>get survey list</shortDescription>
+        <value>get survey list</value>
+    </labels>
+    <labels>
+        <fullName>greater_or_equal</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>greater or equal</shortDescription>
+        <value>greater than or equal to</value>
+    </labels>
+    <labels>
+        <fullName>greater_than</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>greater than</shortDescription>
+        <value>greater than</value>
+    </labels>
+    <labels>
+        <fullName>less_or_equal</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>less or equal</shortDescription>
+        <value>less than or equal to</value>
+    </labels>
+    <labels>
+        <fullName>less_than</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>less than</shortDescription>
+        <value>less than</value>
+    </labels>
+    <labels>
+        <fullName>month</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>month</shortDescription>
+        <value>month</value>
+    </labels>
+    <labels>
+        <fullName>month_plural</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>month plural</shortDescription>
+        <value>months</value>
+    </labels>
+    <labels>
+        <fullName>months</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>month(s)</shortDescription>
+        <value>month(s)</value>
+    </labels>
+    <labels>
+        <fullName>not_equal_to</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>not equal to</shortDescription>
+        <value>not equal to</value>
+    </labels>
+    <labels>
+        <fullName>oauth_header</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>oauth header</shortDescription>
+        <value>Sync your SurveyMonkey Enterprise account to Salesforce</value>
+    </labels>
+    <labels>
+        <fullName>on</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>on</shortDescription>
+        <value>on</value>
+    </labels>
+    <labels>
+        <fullName>per</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>per</shortDescription>
+        <value>per</value>
+    </labels>
+    <labels>
+        <fullName>quarters</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>quarter(s)</shortDescription>
+        <value>quarter(s)</value>
+    </labels>
+    <labels>
+        <fullName>splash_bullet1</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>splash bullet1</shortDescription>
+        <value>Track employee and customer satisfaction (CSAT)</value>
+    </labels>
+    <labels>
+        <fullName>splash_bullet2</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>.splash bullet2</shortDescription>
+        <value>Auto-send surveys after an event, training, or interaction</value>
+    </labels>
+    <labels>
+        <fullName>splash_bullet3</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>splash_bullet3</shortDescription>
+        <value>Track your Net Promoter® Score - and more!</value>
+    </labels>
+    <labels>
+        <fullName>splash_bullet_header</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>splash bullet header</shortDescription>
+        <value>Manage customers and their feedback from one place:</value>
+    </labels>
+    <labels>
+        <fullName>splash_desc</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>splash desc</shortDescription>
+        <value>Our app makes it simple to send and analyze your survey directly from Salesforce, so you have access to valuable customer feedback, right where you need it.</value>
+    </labels>
+    <labels>
+        <fullName>splash_tagline</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>splash tagline</shortDescription>
+        <value>Do more with your surveys today!</value>
+    </labels>
+    <labels>
+        <fullName>surveys_every</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>surveys every</shortDescription>
+        <value>surveys every</value>
+    </labels>
+    <labels>
+        <fullName>to</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>to</shortDescription>
+        <value>to</value>
+    </labels>
+    <labels>
+        <fullName>weeks</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>week(s)</shortDescription>
+        <value>week(s)</value>
+    </labels>
+    <labels>
+        <fullName>year</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>year</shortDescription>
+        <value>year</value>
+    </labels>
+    <labels>
+        <fullName>year_plural</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>year plural</shortDescription>
+        <value>years</value>
+    </labels>
+    <labels>
+        <fullName>years</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>year(s)</shortDescription>
+        <value>year(s)</value>
+    </labels>
+</CustomLabels>

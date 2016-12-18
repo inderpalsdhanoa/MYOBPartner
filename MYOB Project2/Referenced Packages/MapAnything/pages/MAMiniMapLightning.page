@@ -1,0 +1,3 @@
+<apex:page showHeader="false" sidebar="false" >    
+    <c:MapAnythingMiniMap RecordId="{!IF($CurrentPage.parameters.Id == 'undefined',$User.Id,$CurrentPage.parameters.Id)}"/>
+</apex:page>

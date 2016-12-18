@@ -1,0 +1,26 @@
+<apex:page sidebar="false" showheader="false">
+<apex:includeScript value="{!URLFOR($Resource.SurveyMonkey__JSDataTable, 'jquery-1.10.1.min.js')}"/>
+ <script>
+ $(document).ready(function(){
+    //$("[id$='htmlPreview']").append((window.opener.document.getElementById('j_id0:container:j_id37:completePage:j_id78:emailBody').value).replace('[[[','').replace(']]]',''));
+    //$("[id$='htmlPreview']").append((window.opener.document.getElementById('j_id0:container:j_id37:completePage:j_id78:emailBody').value).replace(/\[\[\[/gi,'').replace(/\]\]\]/gi,''));
+    $("[id$='htmlPreview']").append((window.opener.document.getElementById('j_id0:container:j_id36:completePage:j_id77:emailBody').value).replace(/\<\!\[\CDATA\[/gi,'').replace(/\]\]\>/gi,''));
+    //$("[id$='htmlPreview']").append((window.opener.document.getElementById('j_id0:container:j_id37:completePage:j_id78:emailBody').value).replaceAll('\\<.*?>',''));
+   
+ });
+                                                      
+ </script>
+ <form name="frmS" method="post" action="/s.aspx?PREVIEW_MODE=DO_NOT_USE_THIS_LINK_FOR_COLLECTION&amp;sm=XmAYRxrB67UhPdFAhtCGhzFcGcI5eo7rab5O7nsEZS8%3d" id="frmS">
+ 
+ <apex:pageblock title="{!$Label.surveymonkey__Email_Template_Preview}" id="EmailTemplatePreview">
+ 
+  <apex:pageMessages id="pgmsg"/> 
+    
+    <apex:outPutPanel layout="block" id="htmlPreview">
+    
+    </apex:outPutPanel>
+            
+   </apex:pageblock>
+  
+</form>
+</apex:page>

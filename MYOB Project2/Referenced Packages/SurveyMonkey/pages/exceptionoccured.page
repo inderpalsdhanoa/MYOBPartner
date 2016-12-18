@@ -1,0 +1,8 @@
+<apex:page controller="SurveyMonkey.exceptionOccuredController" tabStyle="Survey_Campaign__tab">
+<apex:pageblock title="Exception occured">	
+	<p>Some exception occured, please contact your system administrator.</p>
+	<apex:outputpanel rendered="{!if(errorMessage == '',false,true)}"><p>Description: {!ErrorMessage}</p></apex:outputpanel>
+	<br/><br/>
+	Please try again.
+</apex:pageblock>
+</apex:page>

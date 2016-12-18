@@ -1,0 +1,12 @@
+.THIS .button1 {
+    background-color:grey;   
+}
+.THIS.bkgImage{
+    background-image:url("../resource/CommunityBkgImage");
+    
+}
+.THIS .uiInput--select.select:not([multiple]), 
+.THIS .uiInput--select .select:not([multiple]), 
+.THIS .uiInput--select .uiPopupTrigger a {
+    height: 2.2rem;
+}

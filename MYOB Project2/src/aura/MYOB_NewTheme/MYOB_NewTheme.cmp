@@ -1,0 +1,87 @@
+<aura:component implements="forceCommunity:themeLayout" access="global" description="MYOB Loyalty Theme Layout">
+    <aura:attribute name="search" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="profileMenu" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="navBar" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="newHeader" type="Aura.Component[]" required="false"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <ltng:require styles="{!$Resource.MYOB_CSS}" />
+    <ltng:require scripts='/resource/Jquerymin,/resource/bootstrapjs/bootstrap-3.3.7/dist/js/bootstrap.min.js'/>
+    
+    <div class="myob" onclick="{!c.onScreenClick}">
+        <nav id="menu-nav"  class="navbar navbar-myob navbar-myob-header" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="https://www.myob.com/au" style="margin-right:15%;">
+                       <!-- <img src="https://d2d7guzy1ki9ro.cloudfront.net/logos/myob/logo-gradient.svg" alt="MYOB"/>-->
+                    </a>
+                </div>	
+                <div class="navbar-header" style="margin-top:1.2%;margin-right:1%;font-size:large;">My Success</div>
+                <div id="navbar" class="navbar-collapse">
+                    <ul class="nav navbar-nav" style="margin-left:1%;">
+                        <li id="liHome"><a data-toggle="tab" id="HomeAttr" onclick="{!c.HomePage}">Home</a></li>
+                        <li id="liLead" ><a data-toggle="tab" id="LeadAttr" onclick="{!c.Leads}">Leads</a></li>
+                        <li id="liAct" ><a id="ActvStmntAttr" onclick="{!c.ActvStmnt}">Activity Statement</a></li>
+                        <li class="top-menu">
+                            <a class="dropdown-toggle clickable" onclick="{!c.ResClick}" id="ResourceID" data-toggle="dropdown">Resources <span id='ArrowUp'>&#8744;</span><span id='ArrowDown' style="display:none;">&#8743;</span>
+                            </a>
+                            <ul  class="dropdown-menu">
+                                <li><a href="https://www.myob.com/au/accountants-and-partners/training-1258094260982">Learning Centre</a></li>
+                                <li><a href="https://partnermarketing.myob.com" >Marketing Portal</a></li>
+                                <li><a href="http://myob.com.au/partners/partner-resources-1258090827546">Resource Centre</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="top-menu">
+                            <a id = "OtherLinks" class="dropdown-toggle clickable" data-toggle="dropdown">Other Links <span id='OtherLinkArrowUp'>&#8744;</span> <span id='OtherLinkArrowDown' style="display:none">&#8743;</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://community.myob.com/" >Community Forum</a></li>
+                                <li><a href="http://partner.myob.com">Practice Online</a></li>
+                                <li><a href="https://my.myob.com.au/Pages/Default.aspx">my.MYOB</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div></nav>
+        <div class="container"> 
+            {!v.newHeader}
+            <p>  
+                {!v.body}
+            </p>
+        </div>
+        <div id="footerContainer">
+            <div id="footer">
+                <nav id="footer-myob" class="navbar-myob navbar-myob-footer" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <div class="navbar-brand">
+                               <!-- <img src="https://d2d7guzy1ki9ro.cloudfront.net/logos/myob/logo-gradient.svg" alt="MYOB" width="80" height="33"/>-->
+                            </div>
+                        </div>
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="http://www.myob.com.au/privacy" target="_blank">Privacy policy</a></li>
+                                <li><a href="http://www.myob.com.au/about_myob" target="_blank">About us</a></li>
+                                <li><a href="http://myob.com.au/essentials/support" target="_blank">Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="footer-myob">
+                    <div class="container footer-myob-container">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                © 2016 MYOB Technology Pty Ltd.
+                            </div>
+                            <div class="col-xs-18 footer-myob-copyright">
+                                MYOB Essentials and the MYOB Essentials logo are trademarks of MYOB Technology Pty Ltd
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

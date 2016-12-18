@@ -1,0 +1,29 @@
+.THIS .button1 {
+    background-color:grey;   
+}
+.THIS.bkgImage{
+    background-image:url("../resource/CommunityBkgImage");
+}
+.THIS .btnOrder{
+    border: 0px;
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+.THIS .arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;  
+  border-top: 7px solid black;
+}
+.THIS .arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;  
+  border-bottom: 7px solid black;
+}
+.THIS.table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}

@@ -1,0 +1,40 @@
+<aura:component implements="forceCommunity:themeLayout" access="global" description="MYOB Loyalty Theme Layout">
+    <aura:attribute name="search" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="profileMenu" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="navBar" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="newHeader" type="Aura.Component[]" required="false"/>
+    
+     <ltng:require styles="{!$Resource.MYOBStyles + 'myob.css'}" />
+	<ltng:require styles="{!$Resource.MYOBStyles + 'ubuntufont.css'}" />
+    <style>
+    	.navMenu{
+        	background-color: white;
+        	color: black;
+        	float: right;
+        	width: 92%;
+        	padding-top: 0.15cm;
+        }
+        .image{
+        	float: left;
+        	width: 8%
+        }
+         
+    </style>
+    <div>
+       	<div>
+            <div class="navMenu">  
+                {!v.navBar}
+            </div>
+            <div class="image">
+                <!-- Need to change to Absolute URL later after progress -->
+                <img src="https://myob--devpartner--c.cs6.visual.force.com/resource/1478840028000/MYOB_Logo" />
+            </div>
+        </div>
+        <div class="newHeader">
+            {!v.newHeader}
+        </div>
+        <div class="mainContentArea">
+            {!v.body}
+        </div>
+    </div>
+</aura:component>

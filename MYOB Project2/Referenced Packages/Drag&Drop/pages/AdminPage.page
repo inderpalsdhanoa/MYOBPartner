@@ -1,0 +1,284 @@
+<apex:page controller="CADragNDrop.AdminPageController" sidebar="true" showHeader="true" action="{!checkMetadataAPIConnection}">
+<head>
+      <apex:includeScript value="{!$Resource.CADragNDrop__jquery}" / >
+    <apex:includeScript value="{!$Resource.CADragNDrop__jqueryui}" / >
+    <script src="{!$Resource.JquerySwitchButtonJs}"></script>
+    <link rel="stylesheet" href="{!$Resource.JquerySwitchButtonCss}"></link>
+    
+<style>
+    .message{
+        width: 80%;
+    }
+    .formBg{background:#f1f1f1; background-size:cover; padding:3%;}
+    .layout{      background: none repeat scroll 0 0 #fff;
+    border-radius: 22px;
+    box-shadow: 1px 1px 10px #bbb;
+    margin: 60px auto 20px;
+    padding: 37px;}
+  .sysmm{  background: none repeat scroll 0 0 #fff !important;
+    border: medium none !important;
+    border-radius: 15px !important;
+    box-shadow: 0px 0px 8px #bbb;
+    color: #00aeef !important;
+    display: table;
+   
+    font-size: 17px !important;
+    font-weight: normal !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 19px !important;
+    padding: 8px !important;
+    width: 158px !important;}
+.sysmm:hover{background:#00aeef !important; color:#fff !important;  }
+.select{
+    height:228px;vertical-align:top;
+    
+}
+
+select option, select optgroup {
+   border-bottom: 1px solid #B5B5B5;
+    
+    font-family: arial;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px;
+}
+.thHead{
+    text-align:center;
+    font-size:1.3em;
+
+}
+input[type=submit]{
+margin-right:-205px
+
+}
+.selcetTd td{
+    vertical-align:top;
+    
+}
+#content {
+    position: relative;
+}
+#content img {
+     filter: gray; /* IE6-9 */
+      filter: grayscale(1); /* Firefox 35+ */
+      -webkit-filter: grayscale(1); 
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height:90px;
+      -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+#content img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+
+.select {
+      border: medium none;
+  box-shadow: inset 0px 0px 15px #777;
+  height: 247px;
+  vertical-align: top;
+ background:#fafafa;
+  width: 182px !important;}
+    
+    .switch-button-label {
+  float: left;
+  font-size: 11pt;
+  cursor: pointer;
+  padding-top: 3px;
+}
+.tophead{display:table; margin-left:auto; margin-right:auto;  }
+.tophead span{font-size:18px; color:#151515 !important; font-weight:100;}
+</style>
+<script>
+function createRemoteSite()
+{ 
+    // Disable button 
+    document.getElementById('createremotesitebtn').disabled = true;
+    // Calls the Metdata API from JavaScript to create the Remote Site Setting to permit Apex callouts
+    var binding = new XMLHttpRequest();
+    var request = 
+        '<?xml version="1.0" encoding="utf-8"?>' + 
+        '<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">'+
+            '<env:Header>' + 
+                '<urn:SessionHeader xmlns:urn="http://soap.sforce.com/2006/04/metadata">' + 
+                    '<urn:sessionId>{!$Api.Session_ID}</urn:sessionId>' + 
+                '</urn:SessionHeader>' + 
+            '</env:Header>' + 
+            '<env:Body>' +
+                '<createMetadata xmlns="http://soap.sforce.com/2006/04/metadata">' + 
+                    '<metadata xsi:type="RemoteSiteSetting">' + 
+                        '<fullName>dragNdrop_mdapi</fullName>' + 
+                        '<description>Metadata API Remote Site Setting for Drag n Drop App (DND)</description>' + 
+                        '<disableProtocolSecurity>false</disableProtocolSecurity>' + 
+                        '<isActive>true</isActive>' + 
+                        '<url>https://{!Host}</url>' +
+                    '</metadata>' +
+                '</createMetadata>' +
+            '</env:Body>' + 
+        '</env:Envelope>';
+    binding.open('POST', 'https://{!Host}/services/Soap/m/31.0');
+    binding.setRequestHeader('SOAPAction','""');
+    binding.setRequestHeader('Content-Type', 'text/xml');
+    binding.onreadystatechange = 
+        function() { 
+            if(this.readyState==4) {
+                var parser = new DOMParser();
+                var doc  = parser.parseFromString(this.response, 'application/xml');
+                var errors = doc.getElementsByTagName('errors');
+                var messageText = '';
+                for(var errorIdx = 0; errorIdx < errors.length; errorIdx++)
+                    messageText+= errors.item(errorIdx).getElementsByTagName('message').item(0).innerHTML + '\n';
+                displayMetadataResponse(messageText);
+            } 
+        }
+    binding.send(request);
+}
+    function unSelectedImageClick(){
+        if(confirm('Are you sure want to delete drag&drop from this objects')){
+            unchckMe();
+            return true;
+            
+        }else
+            return false;
+        
+    }
+</script>
+</head> 
+<apex:form id="myForm" styleClass="formBg" >
+      <div  id="content">
+           <a href="http://cloudanalogy.com/" target="_blank" >
+           <apex:image value="{!$Resource.CADragNDrop__Cloud_Analogy}" title="Help for this Page"/>
+           
+       </a>
+      </div>   
+      <apex:actionFunction name="displayMetadataResponse" action="{!displayMetadataResponse}" rerender="myForm">
+            <apex:param name="metadataResponse" assignTo="{!metadataResponse}" value="{!metadataResponse}"/>
+        </apex:actionFunction>
+        
+        <apex:pageMessages />
+        
+        <apex:outputPanel rendered="{!MetadataConnectionWarning}">
+            <h1>Important Post Install Step:</h1> 
+            <p>In order to utlise the features of this tool you need to permit the tool access to the Salesforce Metadata API by adding a <a target="_new" href="http://na1.salesforce.com/help/doc/en/configuring_remoteproxy.htm">Remote Site Setting</a> with this Salesforce Server URL <b>https://{!Host}</b></p>
+            <p> Click the <b>Create Remote Site Setting</b> button to have the tool perform this step for you.</p>
+            <input id="createremotesitebtn" type="button" onclick="createRemoteSite();" value="Create Remote Site Setting"/>
+        </apex:outputPanel>
+        <apex:outputPanel rendered="{!!MetadataConnectionWarning}">
+    <script>
+        $( document ).ready(function() {
+            
+            $("#checkMe").switchButton({
+                      on_label: 'Remove Drag & Drop From Page Layouts ',
+                      off_label: 'Add Drag & Drop On Page Layouts',
+                      width: 60,
+                      height: 20,
+                      button_width: 30,
+                      checked: false
+                    });
+                    $("[id$='PanelGridID2']").hide();
+                     $('.off').css('opacity' , '.1');
+             $("[id$='checkMe']").change(function(){
+                     
+                    if(this.checked){
+                         $("[id$='dadada']").hide();
+                          $("[id$='PanelGridID2']").show();
+                          $('.on').css('opacity' , '.1');  
+                          $('.off').css('opacity' , '1');  
+                    }else{
+                        $('.off').css('opacity' , '1');  
+                          $('.on').css('opacity' , '.1');
+                        $("[id$='dadada']").show();
+                        $("[id$='PanelGridID2']").hide();
+                       
+                        
+                  }
+                 });   
+                });
+                
+    </script>
+    </apex:outputPanel>
+        <apex:outputPanel rendered="{!MetadataConnectionWarning}">
+            <p style="color:gray">DEBUG USE ONLY: {!metadataApiException}</p>
+        </apex:outputPanel>
+        <apex:outputPanel rendered="{!!MetadataConnectionWarning}">
+           <div class="tophead">
+           
+  <input checked="false" id="checkMe" onclick="alert(1);" type="checkbox" value="1"  />  
+ 
+  
+  </div>
+
+      
+        <apex:actionstatus id="status">
+            <apex:facet name="start">
+                <div class="waitingSearchDiv" id="el_loading" style="background-color: #fbfbfb;
+                       height: 100%;opacity:0.65;width:100%;"> 
+                    <div class="waitingHolder" style="top: 200.2px; width: 100%;">
+                        <img class="waitingImage" src="{!$Resource.Loader}" title="Please Wait..." />
+                        <span class="waitingDescription"></span>
+                    </div>
+                </div>
+            </apex:facet>
+        </apex:actionstatus>
+        <table id="dadada" Class="layout selcetTd" >
+        <thead>
+  <tr>
+     <th class="thHead">Objects</th>
+     <th class="thHead">Layouts</th>
+  </tr>
+ </thead>
+       <tr><td>
+        <apex:selectList styleClass="select" id="sel12" title="All Objects" value="{!selectObjectLayout}" multiselect="false" style="width:150px" size="{!AllObjects.size}">
+                <apex:selectOptions value="{!AllObjectsNew}" />
+                <apex:actionSupport event="onchange" reRender="sel123" status="status"  />
+            </apex:selectList>
+            </td><td> 
+            <apex:selectList styleClass="select"  id="sel123" title="All Objects" value="{!selectLayoutList}" multiselect="true" style="width:150px" size="{!PageLayoutList.size}">
+                <apex:selectOptions value="{!PageLayoutList}" />
+            </apex:selectList>
+             </td>
+             </tr>
+             <tr ><td colspan="2">
+            <apex:commandButton styleClass="sysmm" value="Save"  action="{!onSaveMultiple}"/>
+        </td></tr>
+       </table>    
+      
+       
+       <table id="PanelGridID2" class="layout selcetTd"  style="display:none;" >
+      <thead>
+  <tr>
+     <th class="thHead">Objects</th>
+     <th class="thHead">Layouts</th>
+  </tr>
+ </thead>
+       <tr><td>
+        <apex:selectList id="sel12111" styleClass="select" title="All Objects" value="{!removeSelectedObject}" multiselect="false" style="width:150px" size="10">
+                <apex:selectOptions value="{!SelectObjectList}" />
+                <apex:actionSupport event="onchange" reRender="s11el1234" status="status"  />
+            </apex:selectList>
+           </td><td> 
+             <apex:selectList id="s11el1234" styleClass="select"  value="{!selectRemoveLayoutList}" multiselect="true" style="width:150px" >
+                <apex:selectOptions value="{!SelectPageLayout}" />
+            </apex:selectList> 
+             </td>
+             </tr>
+             <tr ><td colspan="2">
+             <apex:commandButton styleClass="sysmm" value="Delete"  action="{!updateDeleted}"/>
+             </td></tr>
+       </table>     
+             </apex:outputPanel>
+             
+    </apex:form>
+</apex:page>
